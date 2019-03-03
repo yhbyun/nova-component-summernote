@@ -20,9 +20,8 @@
 <script>
 import { FormField, HandlesValidationErrors } from 'laravel-nova';
 
-import bootstrap from 'bootstrap';
-import summernote from 'summernote';
-import 'summernote/dist/summernote.css';
+import "summernote/dist/summernote-lite";
+import 'summernote/dist/summernote-lite.css';
 
 export default {
     mixins: [FormField, HandlesValidationErrors],
@@ -54,7 +53,7 @@ export default {
 
     },
 
-    mounted() {   
+    mounted() {
         let vm = this;
 
         $(document).ready(function() {

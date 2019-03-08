@@ -22,6 +22,8 @@ import { FormField, HandlesValidationErrors } from 'laravel-nova';
 
 import "summernote/dist/summernote-lite";
 import 'summernote/dist/summernote-lite.css';
+import 'codemirror/lib/codemirror';
+import 'codemirror/lib/codemirror.css';
 
 export default {
     mixins: [FormField, HandlesValidationErrors],

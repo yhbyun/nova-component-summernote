@@ -44,6 +44,9 @@ export default {
         fill(formData) {
           this.switchHtmlCodeViewToNormalView();
           this.setValue();
+          if (stripTags(this.value).length === 0) {
+            this.value = '';
+          }
           formData.append(this.field.attribute, this.value || '')
         },
 
@@ -73,5 +76,12 @@ export default {
         });
     },
 
+}
+
+function stripTags(html) {
+   var tmp = document.createElement("DIV");
+   tmp.innerHTML = html;
+
+   return tmp.textContent || tmp.innerText || "";
 }
 </script>

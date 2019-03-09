@@ -42,6 +42,8 @@ export default {
          * Fill the given FormData object with the field's internal value.
          */
         fill(formData) {
+          this.switchHtmlCodeViewToNormalView();
+          this.setValue();
           formData.append(this.field.attribute, this.value || '')
         },
 
@@ -51,6 +53,14 @@ export default {
         setValue() {
           let vm = this;
           this.value = $(vm.$el).find('.note-editable').html();
+        },
+
+        switchHtmlCodeViewToNormalView() {
+          try {
+            $(this.$el).find('.btn-codeview.active').click();
+          } catch(e) {
+            // just ignore
+          };
         },
 
     },

@@ -18,12 +18,11 @@
 </template>
 
 <script>
-import { FormField, HandlesValidationErrors } from 'laravel-nova';
-
 import "summernote/dist/summernote-lite";
 import 'summernote/dist/summernote-lite.css';
 import 'codemirror/lib/codemirror';
 import 'codemirror/lib/codemirror.css';
+import { FormField, HandlesValidationErrors } from 'laravel-nova';
 
 export default {
     mixins: [FormField, HandlesValidationErrors],
@@ -35,35 +34,35 @@ export default {
          * Set the initial, internal value for the field.
          */
         setInitialValue() {
-          this.value = this.field.value || ''
+            this.value = this.field.value || ''
         },
 
         /**
          * Fill the given FormData object with the field's internal value.
          */
         fill(formData) {
-          this.switchHtmlCodeViewToNormalView();
-          this.setValue();
-          if (stripTags(this.value).length === 0) {
-            this.value = '';
-          }
-          formData.append(this.field.attribute, this.value || '')
+            this.switchHtmlCodeViewToNormalView();
+            this.setValue();
+            if (stripTags(this.value).length === 0) {
+                this.value = '';
+            }
+            formData.append(this.field.attribute, this.value || '')
         },
 
         /**
          * Update the field's internal value.
          */
         setValue() {
-          let vm = this;
-          this.value = $(vm.$el).find('.note-editable').html();
+            let vm = this;
+            this.value = $(vm.$el).find('.note-editable').html();
         },
 
         switchHtmlCodeViewToNormalView() {
-          try {
-            $(this.$el).find('.btn-codeview.active').click();
-          } catch(e) {
-            // just ignore
-          };
+            try {
+                $(this.$el).find('.btn-codeview.active').click();
+            } catch(e) {
+                // just ignore
+            };
         },
 
     },
@@ -72,16 +71,16 @@ export default {
         let vm = this;
 
         $(document).ready(function() {
-          $(vm.$el).find('textarea').summernote();
+            $(vm.$el).find('textarea').summernote();
         });
     },
 
 }
 
 function stripTags(html) {
-   var tmp = document.createElement("DIV");
-   tmp.innerHTML = html;
+    var tmp = document.createElement("DIV");
+    tmp.innerHTML = html;
 
-   return tmp.textContent || tmp.innerText || "";
+    return tmp.textContent || tmp.innerText || "";
 }
 </script>

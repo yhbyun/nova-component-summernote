@@ -1,0 +1,1119 @@
+.note-editable {
+/* CSS Document */
+:focus {-moz-outline-style: none;} /*for Firefox*/
+
+/* CSS Document */
+/*******************************************************************************/
+/*  ECPlaza       : You In Jin  								  */
+/*  StartDate     : 2010-08-04  								  */
+/*  Modifyt Date  : 2010-08-04  								  */
+/*******************************************************************************/
+
+html, body {height: 100%;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form , label, legend, table, caption, tbody, tfoot, thead, tr,
+th, td { margin:0; padding:0; outline:0; }
+ul,ol{ list-style:none;}
+h1, h2, h3, h4, h5, h6 { font-size:1em; font-weight:normal;}
+img{ border:0}
+
+body{
+font-family:����ü,����ü,arial,verdana;
+font-size:12px;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+color:#666666;
+margin:0px;
+padding:0px;
+background-color:#fff;
+line-height:18px;
+
+
+scrollbar-face-color: #FFFFFF;
+scrollbar-highlight-color: #FFFFFF;
+scrollbar-3dlight-color: #C0BEBE;
+scrollbar-shadow-color: #C0BEBE;
+scrollbar-darkshadow-color: #FFFFFF;
+scrollbar-track-color: #f2f2f2;
+scrollbar-arrow-color: #9F9E9E
+}
+
+a{text-decoration:none; color:#4d4d4d; outline:0;}
+input,textarea,select{ font-size:12px;}
+input { vertical-align: middle}
+
+/****************************************
+Common
+*****************************************/
+.blind{ display:none; width:0; height:0;}
+.cl{ clear:both; font-size:0; line-height:0; height:0;}
+.footer_space{ height:20px;}
+.wrap_rel{ position:relative;}
+.aln_r{ height:0;}
+.con_bl{ position:absolute; text-indent:-10000px;}
+.txt_c{ text-align:center;}
+.txt_r{ text-align:right;}
+.txt_l{ text-align:left;}
+.txt_j{ text-align:justify}
+.fl{ float:left;}
+.fr{ float:right;}
+.fc{ margin:0 auto;}
+.boc{ display:block;}
+
+.ma_b5{ margin-bottom:5px;}
+.ma_b10{ margin-bottom:10px;}
+.ma_b15{ margin-bottom:15px;}
+.ma_b20{ margin-bottom:20px;}
+.ma_b25{ margin-bottom:25px;}
+.ma_b30{ margin-bottom:30px;}
+.ma_b40{ margin-bottom:40px;}
+.ma_r10{ margin-right:10px;}
+.ma_r15{ margin-right:15px;}
+.ma_r30{ margin-right:30px;}
+.ma_r50{ margin-right:50px;}
+.ma_r20{ margin-right:20px;}
+.ma_r27{ margin-right:27px}
+.ma_r12{ margin-right:12px}
+
+
+.ma_r5{ margin-right:5px;}
+.ma_r3{ margin-right:3px;}
+.ma_t5{ margin-top:5px;}
+.ma_t3{ margin-top:3px;}
+.ma_t50{ margin-top:50px;}
+.ma_t40{ margin-top:40px;}
+.ma_t30{ margin-top:30px;}
+.ma_t20{ margin-top:20px;}
+.ma_t15{ margin-top:15px;}
+.ma_t10{ margin-top:10px;}
+.ma_l30{ margin-left:30px;}
+.ma_l25{ margin-left:25px;}
+.ma_l20{ margin-left:20px;}
+.ma_l15{ margin-left:15px;}
+.ma_l10{ margin-left:10px;}
+.ma_l5{ margin-left:5px;}
+.ma_l3{ margin-left:3px;}
+.pa_r3{ padding-right:3px;}
+.pa_r5{ padding-right:5px;}
+
+.con10{ padding:5px ; font-family:"����ü", "����ü"; background:#000000; color:#FF0000; line-height:30px;  }
+.con10 .ft_blue{ color:#0000FF;}
+
+.contype1{ padding:5px; display:block; line-height:18px;}
+.contype2{ padding:5px 10px 5px 10px; display:block; line-height:18px;}
+.contype3{ padding:10px 5px 10px 5px; display:block; line-height:18px;}
+.contype4{ padding:20px 5px 20px 5px; display:block; line-height:18px;}
+.contype5{ padding:5px; display:block; line-height:18px; }
+.contype10{ padding:10px; display:block; line-height:18px; }
+.contype15{ padding:15px; display:block; line-height:18px; }
+.contype20s{ padding:15px 20px 15px 20px; display:block; line-height:18px; }
+.contype20{ padding:20px; display:block; line-height:18px; }
+.contype25{ padding:25px; display:block; line-height:18px; }
+.contype25s{ padding:15px 25px 15px 25px; display:block; line-height:18px; }
+.contype30{ padding:30px; display:block; line-height:18px; }
+.contype30s{  padding:15px 30px 15px 30px; display:block; line-height:18px; }
+
+
+.fb{ font-weight:bold;}
+.f_black{ color:#000;}
+.f_burnt{color:#332000}
+.f_blue1{color:#0b162a;}
+.f_blue2{color:#1263a8;}
+.f_blue3{color:#0ea5cd;}
+.f_blue4{color:#304e83;}
+.f_or1{color:#c7370a;}
+.f_or2{color:#f25e1e;}
+.f_or3{color:#ef3900;}
+.f_gr1{color:#454545;}
+.f_pink{color:#e00035;}
+.f_red{ color:#d91900; }
+
+.f_blue2 a{color:#1263a8;}
+.f_blue2 a:hover{color:#c7370a;}
+
+.f09{font-size:0.9em; }
+.f1{font-size:1.1em; }
+.f2{font-size:1.2em;}
+.f3{font-size:1.5em;}
+.f4{font-size:1.7em;}
+.f5{font-size:2.0em;}
+
+.f1 a{ text-decoration:underline;}
+.f1 a:hover{ text-decoration:underline; color:#0174bd;}
+.h_0{height:0;}
+.w50{ width:50px;}
+.w60{ width:60px;}
+.w70{ width:70px;}
+.w80{ width:80px;}
+.w90{ width:90px;}
+.w100{ width:100px;}
+.w150{ width:150px;}
+.w180{ width:180px;}
+.w200{ width:200px;}
+.w215{ width:215px;}
+.w220{ width:220px;}
+.w230{ width:230px;}
+.w250{ width:250px;}
+.w280{ width:280px;}
+.w300{ width:300px;}
+.w350{ width:350px;}
+.w360{ width:360px;}
+.w400{ width:400px;}
+.w420{ width:420px;}
+.w450{ width:450px;}
+.w500{ width:500px;}
+.w550{ width:550px;}
+.w600{ width:600px;}
+.w650{ width:650px;}
+.w700{ width:700px;}
+.w800{ width:800px;}
+.w850{ width:850px;}
+.w900{ width:900px;}
+.w920{ width:920px;}
+
+.con_wd1{ width:600px; margin:0 auto;}
+.con_wd2{ width:630px; margin:0 auto;}
+.con_wd3{ width:620px; margin:0 auto;}
+.con_iframe{ width:640px;  margin:0 auto;}
+
+.v_p3{ vertical-align:3px;}
+.v_p5{ vertical-align:5px;}
+.v_p7{ vertical-align:7px;}
+.v_p10{ vertical-align:10px;}
+.v_m3{ vertical-align:-3px;}
+.v_m5{ vertical-align:-5px;}
+.v_m7{ vertical-align:-7px;}
+.v_m10{ vertical-align:-10px;}
+.v_mbtn1{ vertical-align:-7px;}
+
+.dotline{ height:0px; border:1px dashed #d1d1d1; border-bottom:0px; border-left:0px;  border-right:0px;}
+.dotline2{ height:0px; border:2px dotted #d1d1d1;border-bottom:0px; border-left:0px;  border-right:0px;}
+.dotline3{ height:0px; border:1px dotted #b7b7b7; border-bottom:0px; border-left:0px;  border-right:0px;}
+.d_line{ height:0px; border:1px solid #d1d1d1; border-bottom:0; }
+
+.line_type1{height:0px; border:1px solid #bee0f1; border-bottom:0px; border-left:0px;  border-right:0px;}
+
+
+
+
+/*titie*/
+.title_date{ background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_title_date.gif) -1px 0 no-repeat; padding:0 20px 0 20px; height:22px; line-height:24px; color:#fff; font-weight:bold;}
+
+.sub_pg_tt{ margin-bottom:-2px;}
+
+.ul_type1 a:hover{ color:#d91900;}
+.ln_2{ line-height:1.2em;}
+
+.ul_type1 .icon_num1{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_1.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+.ul_type1 .icon_num2{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_2.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+.ul_type1 .icon_num3{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_3.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+.ul_type1 .icon_num4{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_4.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+.ul_type1 .icon_num5{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_5.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+.ul_type1 .icon_num6{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_6.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+.ul_type1 .icon_num7{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_7.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+.ul_type1 .icon_num8{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/help/icon_num_8.gif) no-repeat; height:35px; padding-left:45px; line-height:35px;  margin-left:-10px; }
+
+
+
+/*icon_type*/
+
+.icon_type1{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list2.gif) 4px 4px no-repeat; padding-left:15px; line-height:14px;}
+.icon_type2{  display:block; background: url(https://image1.ecplaza.com/korea/v2/images/common/icon_list1.gif) 4px 2px no-repeat; text-align:left; vertical-align:top; padding-left:14px; line-height:12px;}
+.icon_type2b{ display:block; background: url(https://image1.ecplaza.com/korea/v2/images/common/icon_list1.gif) 4px 2px no-repeat; text-align:left; vertical-align:top; padding-left:14px; line-height:14px;}
+.icon_type3{ display:block; background: url(https://image1.ecplaza.com/korea/v2/images/common/icon_list3.gif) 4px 4px no-repeat; text-align:left; vertical-align:top; padding-left:14px; line-height:14px;}
+.icon_type2_1 { display:block;background: url(https://image1.ecplaza.com/korea/v2/images/common/icon_list1.gif) 4px 6px no-repeat; text-align:left; vertical-align:top; padding-left:14px; line-height:18px;}
+
+.icon_type4{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list4.gif) 4px 4px no-repeat; padding-left:14px; line-height:14px; margin-bottom:5px; }
+.icon_type4_1{ margin-bottom: 5px; background: url(https://image1.ecplaza.com/korea/v2/images/common/icon_list4.gif) no-repeat 4px 4px; padding-left: 14px; display: block; line-height: 14px; color: #c70101 }
+.icon_type4_1 img{ padding-left: 5px; vertical-align:middle }
+.icon_type5{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list8.gif) 4px 4px no-repeat; padding-left:15px; line-height:14px; margin-bottom:5px;}
+.icon_minus{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_minus.gif) 4px 4px no-repeat; padding-left:15px; line-height:14px; margin-bottom:5px;}
+
+.icon_arrow1{background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_arrow1.gif) 2px 2px no-repeat; padding-left:18px;}
+.icon_select{ display:block ; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_title3.gif) 0px 2px no-repeat; padding-left:20px; line-height:16px; font:bold 14px verdana; color:#332000;}
+
+.icon_num1{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num1.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num2{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num2.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num3{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num3.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num4{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num4.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num5{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num5.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num6{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num6.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num7{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num7.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num8{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num8.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num9{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num9.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+.icon_num10{ display:block;  background:#fff url(https://image1.ecplaza.com/korea/v2/images/common/icon_num10.gif) 0 2px no-repeat; padding-left:35px; background-color:transparent;}
+
+
+/*input_type*/
+.ul_type1 li{background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list2.gif) 4px 4px no-repeat; padding-left:15px; line-height:12px; margin-bottom:5px;}
+.ul_type1 .ul_title{ font-size:1.2em; margin-bottom:5px; font:bold 1.5em vedana;  }
+.ul_type1 .part_line{ display:block;  background:none;  border-bottom:1px dotted #dadada;line-height:1px; font-size:0 ; margin:10px 0 15px 0; padding:0; }
+
+.ul_type2 li{ display:block; margin-bottom:3px; background-color:transparent;}
+.ul_type2 .tt{ font-weight:bold; float:left; }
+.ul_type2 .tt_value{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_d_dot.gif) 4px 3px no-repeat; float:left; padding-left:15px; line-height:14px; }
+.ul_type2 .part_line{ clear:both; display:block;  background:none;  border-bottom:1px dotted #dadada; line-height:1px; font-size:0; padding:0;  }
+.ul_type2 .le{ clear:both; height:0; font:0; line-height:0; margin:0; padding:0;}
+.ul_line1 li{clear:both; display:block; border-bottom:1px dotted #dadada; padding-bottom:5px; margin-bottom:5px;}
+.ul_line1 li.no_b{ border-bottom:0;}
+
+.ul_type3 li{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list4.gif) 4px 4px no-repeat; padding-left:14px; line-height:14px; margin-bottom:5px; }
+.ul_type3 li.part_line{border:0;  border-bottom:1px dotted #d1d1d1;}
+.ul_type3 .tt_value{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_d_dot.gif) 4px 3px no-repeat; float:left; padding-left:15px; line-height:14px; }
+.ul_type3 .le{ clear:both; height:0; font:0; line-height:0; margin:0; padding:0;}
+
+.ul_type4 .tt_value{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_d_dot.gif) 4px 3px no-repeat; padding-left:15px; line-height:14px; }
+
+.ul_type5 li{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list6.gif) 10px 5px no-repeat; padding-left:22px;}
+
+.ul_type6 li{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list8.gif) 4px 4px no-repeat; padding-left:15px; line-height:12px; margin-bottom:5px;}
+.ul_type6 .ul_title{ font-size:1.2em; margin-bottom:5px; font:bold 1.5em vedana; }
+.ul_type6 .part_line{ display:block;  background:none;  border-bottom:1px dotted #dadada;line-height:1px; font-size:0 ; margin:10px 0 15px 0; padding:0; }
+
+.ul_type7 li{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list9.gif) 4px 4px no-repeat; padding-left:15px; line-height:12px; margin-bottom:5px;}
+.ul_type7_s li{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list9.gif) 4px 4px no-repeat; padding-left:15px; line-height:12px; margin-bottom:5px; font-size:11px; letter-spacing:-2px;}
+
+/*dl_type*/
+
+.line_h12 dd{ line-height:12px;}
+.dl_type1{}
+.dl_type1 .tt_dep1{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_title_depth1.gif) left bottom repeat-x; color:#1e3c70; font-weight:bold; min-height:25px; border-top:1px solid #b5def3;}
+.dl_type1 .icon_tt{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_title2.gif) 5px 6px no-repeat; padding-left:20px; line-height:25px;}
+.dl_type1 .ls_icon1{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list6.gif) 10px 5px no-repeat; padding-left:22px;}
+
+.dl_type2{}
+.dl_type2 dt{ display:block; color:#1e3c70; line-height:16px; margin-bottom:8px; font-size:11px; font-weight:bold; letter-spacing:-1px; }
+.dl_type2 dd{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list3.gif) 5px 6px no-repeat; padding-left:15px; margin-bottom:2px;font-size:11px; }.dl_type2 .ls_icon1{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list6.gif) 10px 5px no-repeat; padding-left:22px;}
+
+
+.dl_type3{ display:block; margin-bottom:3px;}
+.dl_type3 dt{ display:block; font-weight:bold; float:left;background-color:transparent; letter-spacing:-1px;  }
+.dl_type3 dt .en{ letter-spacing:0;}
+.dl_type3 dt.en{ letter-spacing:0;}
+.dl_type3 dd{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_d_dot.gif) 4px 3px no-repeat; float:left; padding-left:15px; line-height:14px; background-color:transparent; letter-spacing:-1px;}
+.dl_type3 .part_line{ display:block; clear:both; background:none;  border-bottom:1px dotted #dadada; line-height:1px; font-size:0; padding:0; margin-bottom:5px; padding-bottom:5px; }
+.dl_type3 dd.le{ display:block; background:none; float:none; clear:both; height:0; font-size:0; line-height:0; margin:0; padding:0; margin-bottom:3px; padding-bottom:3px;}
+
+
+.dl_type4{}
+.dl_type4 dt{ display:block; color:#1e3c70; line-height:16px; margin-bottom:8px; font-size:11px; font-weight:bold; letter-spacing:-1px; }
+.dl_type4 dd{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list4.gif) 2px 6px no-repeat; padding-left:10px; margin-bottom:2px; font-size:11px;   }
+.dl_type4 .ls_icon1{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list6.gif) 10px 5px no-repeat; padding-left:22px;}
+
+.dl_type5{}
+.dl_type5 dt{ display:block; color:#1e3c70; line-height:16px; margin-bottom:2px; font-size:11px; font-weight:bold; letter-spacing:-1px; padding-left:5px;}
+.dl_type5 dd{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list4.gif) 2px 6px no-repeat; padding-left:10px; margin-bottom:0px; font-size:11px;   }
+.dl_type5 .ls_icon1{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list6.gif) 10px 5px no-repeat; padding-left:22px;}
+
+.dl_type6{}
+.dl_type6 dt{ display:block; color:#1e3c70; line-height:16px; margin-bottom:8px; font-size:12px; font-weight:bold; letter-spacing:-1px; }
+.dl_type6 dd{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list4.gif) 2px 6px no-repeat; padding-left:10px; margin-bottom:2px; font-size:12px; line-height:14px;   }
+
+.dl_type7 dt{ margin-bottom:4px;}
+.dl_type7 dd{ margin-bottom:5px;}
+
+.dl_type8 dt{ margin:0; display:block; line-height:14px;margin-right:10px; }
+.dl_type8 dt img { margin-bottom:-2px; float:left;}
+.dl_type8 dd{display:block; margin-bottom:0;}
+.d_space{ font:0; line-height:0; height:3px; clear:both;}
+
+/*input_type*/
+.inp_type1{border:1px solid #d5d5d5; border-top:1px solid #b8b9be;  background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_input1.gif) top left repeat-x; padding:2px 5px 0px 5px; height:18px;}
+.inp_type2{border:0px; border-bottom:1px solid #d6d6d6;  border-right:1px solid #d6d6d6; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_input2.gif) top left repeat-x; padding:3px 5px 0px 5px; height:17px;}
+.txt_type1{border:1px solid #e8e8e8;}
+
+
+
+
+
+/****************************************
+ Layout
+*****************************************/
+#main_page_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/main/bg_main.gif) repeat-x; min-height:100%; _height:100%;}
+#main_page_wrap #page_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/main/bg_main2.jpg) center 250px no-repeat; }
+
+#sub_page_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_sub.gif) repeat-x;  _height:100%;}
+
+#sub_page_wrap #page_wrap{  background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_sub2.gif) center 102px no-repeat; }
+
+
+#page_width{width:1000px; margin:0 auto; padding-bottom:40px;}
+#container{width:910px; float:left;}
+
+#con_left{ display:block; width:204px; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_sub_left.gif) right top no-repeat; min-height: 400px; float:left;}
+#con_right{ display:block; width:650px; min-height: 400px; padding:0 30px 0 25px;  float:left;}
+
+.sub_s_img{ text-align:center;}
+/****************************************
+QuickMenu
+*****************************************/
+#quick_menu{ float:left; margin-left:10px; width:70px; z-index:10000; }
+#quick_menu ul{background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_bg.gif) repeat-y;}
+
+
+#quick_menu .quick_box{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_bg.gif) repeat-y; padding:3px 0 5px 0; margin-bottom:-10px;}
+#quick_menu #q_main{display:block;display:block; background:none; background-color:#f2f2f2; width:64px; height:486px; padding-top:0px;  margin:0px 0 8px 4px; }
+#quick_menu #q_main li{ text-indent:-10000px; margin-bottom:4px;}
+#quick_menu #q_main #q1 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 0 no-repeat; width:58px; height:50px; margin-left:1px;}
+#quick_menu #q_main #q1 a{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 0 no-repeat; width:58px; height:50px; }
+#quick_menu #q_main #q1 a:hover{ background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 0 no-repeat; }
+#quick_menu #q_main #q2 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -52px no-repeat; width:58px; height:54px; margin-left:1px;}
+#quick_menu #q_main #q2 a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -52px no-repeat; width:58px; height:54px;}
+#quick_menu #q_main #q2 a:hover{ background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 -52px no-repeat;}
+#quick_menu #q_main #q3 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -104px no-repeat; width:58px; height:64px; margin-left:1px;}
+#quick_menu #q_main #q3 a{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -104px no-repeat; width:58px; height:64px; }
+#quick_menu #q_main #q3 a:hover{background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 -104px no-repeat;}
+#quick_menu #q_main #q4 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -169px no-repeat; width:58px; height:54px; margin-left:1px;}
+#quick_menu #q_main #q4 a{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -169px no-repeat; width:58px; height:54px;}
+#quick_menu #q_main #q4 a:hover{background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 -169px no-repeat;}
+#quick_menu #q_main #q5 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -224px no-repeat; width:58px; height:54px; margin-left:1px;}
+#quick_menu #q_main #q5 a{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -224px no-repeat; width:58px; height:54px;}
+#quick_menu #q_main #q5 a:hover{background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 -224px no-repeat;}
+#quick_menu #q_main #q6 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -280px no-repeat; width:58px; height:64px; margin-left:1px;}
+#quick_menu #q_main #q6 a{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -280px no-repeat; width:58px; height:64px;}
+#quick_menu #q_main #q6 a:hover{background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 -280px no-repeat;}
+#quick_menu #q_main #q7 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -345px no-repeat; width:58px; height:64px; margin-left:1px;}
+#quick_menu #q_main #q7 a{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -345px no-repeat; width:58px; height:64px;}
+#quick_menu #q_main #q7 a:hover{background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 -345px no-repeat;}
+#quick_menu #q_main #q8 {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -410px no-repeat; width:58px; height:58px; margin-left:1px;}
+#quick_menu #q_main #q8 a{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img00.gif) 0 -410px no-repeat; width:58px; height:58px;}
+#quick_menu #q_main #q8 a:hover{background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_img01.gif) 0 -410px no-repeat;}
+
+
+#quick_menu .quick_box2{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_menu_bg.gif) repeat-y; padding:3px 0 10px 0;}
+#quick_menu #q_sub li{ text-indent:-10000px;}
+#quick_menu #q_sub #q1 a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub1.gif) no-repeat; width:51px; height:52px; margin-left:8px;}
+#quick_menu #q_sub #q1 a:hover{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub1o.gif) left top no-repeat;}
+#quick_menu #q_sub #q2 a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub2.gif) no-repeat; width:51px; height:52px; margin-left:8px;}
+#quick_menu #q_sub #q2 a:hover{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub2o.gif) left top no-repeat;}
+#quick_menu #q_sub #q3 a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub3.gif) no-repeat; width:51px; height:52px; margin-left:8px;}
+#quick_menu #q_sub #q3 a:hover{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub3o.gif) left top no-repeat;}
+#quick_menu #q_sub #q4 a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub4.gif) no-repeat; width:51px; height:62px; margin-left:8px;}
+#quick_menu #q_sub #q4 a:hover{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/quick_sub4o.gif) left top no-repeat;}
+#quick_menu #q_sub .ln{ border-bottom:1px solid #f1f1f1; width:52px; margin:5px 0 5px 8px; height:0; font:0; line-height:0;}
+
+#quick_menu .quc_top{ margin-top:-5px; background-color:#FFFFFF;}
+
+/****************************************
+Top
+*****************************************/
+#top_area{ padding-top:10px; height:92px;}
+
+
+
+#dmenu {height:12px; float:left;  margin-right:15px; margin-bottom:-3px; margin-top:2px;}
+#dmenu li{display:block; float:left;  font-weight:bold;}
+#dmenu .part{ background:url(https://image1.ecplaza.com/korea/v2/images/common/top_dmenu_part.gif) center  2px no-repeat; width:12px; height:11px;}
+#dmenu ul li a{color:#000;}
+#dmenu ul li a:hover{color:#330000;}
+#topMenu{ margin-top:25px; width:680px; height:85px; margin-top:5px;  margin-bottom:-25px;}
+
+.top_right{ _width:570px; float:right; margin-top:-2px; margin-bottom:2px; }
+
+#top_search { background:url(https://image1.ecplaza.com/korea/v2/images/common/top_search_bg2.gif) left top repeat-x; height:20px; }
+#top_search .search_box{ border:1px solid #d4d4d4; height:14px; width:150px; background:url(https://image1.ecplaza.com/korea/v2/images/common/top_search_bg.gif) 5px 3px no-repeat; float:left;}
+#top_search .search_box_on{ border:1px solid #d4d4d4; height:14px; width:150px; background:none; line-height:28px; float:left; padding: 0 0 0 5px}
+
+#pg_navi { }
+#pg_navi ul { float:right; margin-top:12px;}
+#pg_navi ul li{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_navi.gif) 0 -1px no-repeat; padding-left:15px; line-height:14px;  font-size:11px; float:left; color:#1e3c70; margin-left:5px; letter-spacing:-2px;}
+#pg_navi ul li a{ font-size:11px;color:#1e3c70;}
+#pg_navi ul li a:hover{ color:#0ea5cd;}
+#pg_navi ul li h1{ font-weight:normal;}
+#pg_navi ul li.navi_home{background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_navi_home.gif) no-repeat; padding-left:14px; letter-spacing:0px;}
+
+
+.familySite{ float:left; position:relative; width:79px; display:block;  border:1px solid #d4d4d4; background-color:#fff; margin-right:5px;}
+.familySite .openList img{ float:left;}
+.familySite .siteList {display:block; position:absolute; top:16px;  left:-1px; width:79px;  }
+.familySite .siteList li{ display:block; width:79px; height:16px;  border:1px solid #d4d4d4; border-bottom:1px solid #f2f2f2;  border-top:0;}
+.familySite .siteList img{ float:left; }
+
+
+
+/****************************************
+Footer
+*****************************************/
+
+#footer{ background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_footer.gif) left 52px repeat-x; border-top:1px solid #d0e2ec;  height:145px;}
+#footer #foot_box{ width:1000px; height:22px; margin:0 auto;}
+#footer #foot_menu { width:910px; height:17px;  background:#b0b0b0;  text-align:center; padding-top:5px; margin-top:-2px;}
+#footer #foot_menu ul{margin:0 auto; width:350px;}
+#footer #foot_menu ul li{ display:block; background: url(https://image1.ecplaza.com/korea/v2/images/common/footer_part.gif) right top no-repeat; float:left; margin-right:15px; padding-right:15px;}
+#footer .foot_box_wrap{ width:910px; height:85px; }
+#footer #foot_menu ul li.no_line{background:none;}
+
+/****************************************
+Left
+*****************************************/
+
+
+/****************************************
+Main
+*****************************************/
+#main_con{ margin-top:0px; padding:0 10px 0 10px;}
+#main_con .box_part{ width:290px; float:left; }
+#main_con .box_part_event{ width:290px; float:left; height:280px;}
+#main_con .box_title{ margin:15px 0 10px 10px;  padding-right:10px; height:15px;}
+#main_con .box_title .btn_more{ float:right; margin:3px 5px 0 0 ;}
+
+#main_con .d_line{ height:0px; border:1px solid #eeeeed;  border-bottom:0; margin:0; margin-top:10px; }
+#foot_mark{ padding:1px 0 0 0px;}
+#foot_mark img{ margin:0 -2px 0 -1px ;}
+#main_con .box_part_event #event1{ margin-top:10px;}
+#main_con .box_part_event #event2{ margin-top:15px;}
+
+#main_con .lst .ul_type3{width:210px; font-size:11px; letter-spacing:-1px; }
+#main_con .lst .ul_type3 li{ margin-bottom:2px; padding-left:11px;}
+#main_con .lst .ul_type3 a {}
+#main_con .lst .ul_type3 a:hover {color:#00759f;}
+
+.main_con_left{ float:left; width:591px;}
+
+#ex_rate{ display:block; position:relative;  width:186px; }
+#ex_rate_wrap{ position:absolute; left:0px; top:-260px; width:186px;  background:url(https://image1.ecplaza.com/korea/v2/images/main/ex_rate_bg.gif) repeat-y;}
+#ex_rate_wrap .ex_con{ margin-left:3px; margin-top:3px; padding:5px 0 5px 10px;}
+#ex_rate_wrap .ex_rate_bottom{ margin-bottom:-25px; float:left;}
+
+#site_overview{ border-top:2px solid #abcbde; background:#eefafa; clear:both;}
+#site_overview #site_open{ width:1000px;  margin:0 auto;}
+#site_overview #site_open #box_open{ display:block;  border-left:1px solid #d9e7ee;}
+#site_overview #site_open #box_open .d_line{ display:block; border-bottom:1px solid #0da3cb; margin-top:-2px;}
+#site_overview #site_open #box_close{ display:none;}
+#site_overview #site_open #box_open { width:910px;}
+
+
+#site_overview #site_close{width:910px;}
+#site_overview #site_close #box_open{ display:none;}
+#site_overview #site_close #box_close{ display:block;}
+
+
+/*.site_btn{ position:absolute; top:-29px; right:112px;}*/
+
+
+
+/*.site_btn2{ float:right; padding-right:112px;}*/
+#site_open .wrap_rel{ position:static;}
+.site_btn{width:888px; height:28px; margin-top:-28px; overflow:visible; text-align:right}
+.site_btn img{ _position:relative; _top:-0px;}
+
+
+#site_overview .site_part{ display:block; float:left;  color:#5a5a5a; background:#fafefe; border-right:1px solid #d9e7ee; height:190px; width:110px; font-size:11px;}
+#site_overview .site_part dt{display:block; padding:7px 9px 3px 9px; border-bottom:1px solid #85a2c4; font-weight:bold; margin-bottom:3px; letterspacing:-1px;  text-align:center; color:#4c6c92;}
+#site_overview .site_part dd{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list5.gif) 8px center no-repeat; padding:1px 5px 1px 13px; line-height:15px; letter-spacing:-1px;}
+
+#site_overview .site_part dt.dt2{border-top:1px solid #85a2c4; padding:4px 9px 1px 9px;}
+
+#site_overview .site_part dt a{ color:#4c6c92;}
+#site_overview .site_part dd a{ color:#5a5a5a;}
+#site_overview .site_part dd a:hover{ color:#00759f; text-decoration:underline;}
+
+/*bookmark*/
+.site_share{ padding-top:3px; margin-right:10px;}
+
+#site_bookmark{ display:block;height:28px; border-bottom:1px solid #d0e2ec;}
+#site_bookmark .box_bookmark{  display:block; width:1000px; margin:0 auto; }
+#site_bookmark li { display:block; float:left; margin-top:4px;  }
+
+#site_face{ margin-right:10px;}
+#site_face a .s_left{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_face.gif) left top no-repeat; width:52px; height:20px; float:left;text-indent:-10000px;}
+#site_face a .s_right{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_box_r.gif) right top no-repeat;  height:22px; float:left; width:auto; text-indent:0; padding:3px 13px 0 5px; font: normal 11px verdana; letter-spacing:-1px; color:#2d5690;}
+#site_face a:hover .s_left{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_face_o.gif) left top no-repeat;}
+#site_face a:hover .s_right{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_box_r_o.gif) right top no-repeat;  color:#ff3d00;}
+
+#site_tweet{ margin-right:50px;}
+#site_tweet a .s_left{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_tweet.gif) left top no-repeat; width:59px; height:20px; float:left;text-indent:-10000px;}
+#site_tweet a .s_right{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_box_r.gif) right top no-repeat;  height:22px; float:left; width:auto; text-indent:0; padding:3px 13px 0 5px; font: normal 11px verdana; letter-spacing:-1px; color:#2d5690;}
+#site_tweet a:hover .s_left{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_tweet_o.gif) left top no-repeat;}
+#site_tweet a:hover .s_right{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_box_r_o.gif) right top no-repeat;  color:#ff3d00;}
+
+#site_face1{ margin-right:10px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_face1.gif) left top no-repeat; width:52px; height:20px;}
+#site_face1 a {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_face1.gif) left top no-repeat; width:52px; height:20px; float:left;}
+#site_face1 a:hover {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_face1_o.gif) left top no-repeat;}
+#site_face1 a .s_left{ display:none}
+#site_face1 a .s_right{ display:none}
+
+#site_tweet1{margin-right:50px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_tweet1.gif) left top no-repeat; width:59px; height:20px;}
+#site_tweet1 a {display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_tweet1.gif) left top no-repeat; width:59px; height:20px; float:left;}
+#site_tweet1 a:hover { display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_tweet1_o.gif) left top no-repeat;}
+#site_tweet1 a .s_left{ display:none;}
+#site_tweet1 a .s_right{ display:none;}
+
+
+
+
+#site_deli{  text-indent:-10000px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_del.gif) right top no-repeat; width:60px; height:16px;  margin-top:2px;}
+#site_deli a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_del.gif) right top no-repeat; width:60px; height:16px; }
+#site_deli a:hover{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_del_o.gif) right top no-repeat;}
+
+#site_goo{ text-indent:-10000px;display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_goo.gif) right top no-repeat; width:52px; height:16px; margin-top:2px; }
+#site_goo a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_goo.gif) right top no-repeat; width:52px; height:16px; }
+#site_goo a:hover{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_goo_o.gif) right top no-repeat;}
+
+#site_fav{ text-indent:-10000px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_fav.gif) right top no-repeat; width:66px; height:17px; margin-top:2px }
+#site_fav a{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_fav.gif) right top no-repeat; width:66px; height:17px;}
+#site_fav a:hover{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/main/site_fav_o.gif) right top no-repeat;}
+
+#site_bookmark .part{ background:url(https://image1.ecplaza.com/korea/v2/images/main/site_part.gif) center top no-repeat; width:40px; height:7px; margin-top:9px;}
+
+#main_flash{ display:block; width:910px; height:357px; background:url(https://image1.ecplaza.com/korea/v2/images/main/bg_main_img.jpg) top left no-repeat;}
+
+
+
+/****************************************
+Box
+*****************************************/
+/* box1 */
+.box1{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_m_l.gif) repeat-y; }
+.box1 .box_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_m_r.gif) right top repeat-y; }
+.box1 .box_tp{ position:relative; height:5px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_t_m.gif) left top repeat-x; }
+.box1 .box_tp .t_left{ display:block; position:absolute; top:0px; left:0; background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_t_l.gif) left top no-repeat; width:21px; height:21px;}
+.box1 .box_tp .t_right{ display:block; position:absolute; top:0px; right:0px; background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_t_r.gif) left top no-repeat; width:21px; height:21px;}
+.box1 .box_bm{ position:relative; height:5px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_b_m.gif) left bottom repeat-x; }
+.box1 .box_bm .b_left{display:block; position:absolute; bottom:0px; left:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_b_l.gif) left top no-repeat; width:21px; height:21px;}
+.box1 .box_bm .b_right{display:block; position:absolute; bottom:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box1_b_r.gif) left top no-repeat; width:21px; height:21px;}
+.box1 .box_con{padding:10px 21px 10px 21px;}
+
+.box_gray1{ display:block; background:#f5f5f5; padding: 5px 10px 5px 10px;}
+
+
+/* box2 */
+.box2{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_m_l.gif) left top repeat-y ; }
+.box2 .box_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_m_r.gif) right top repeat-y;}
+.box2 .box_tp{ position:relative; height:18px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_t_m.gif) left top repeat-x; }
+.box2 .box_tp .t_left{ display:block; position:absolute; top:0px; left:0; background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_t_l.gif) left top no-repeat; width:18px; height:18px;}
+.box2 .box_tp .t_right{ display:block; position:absolute; top:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_t_r.gif) left top no-repeat; width:18px; height:18px;}
+.box2 .box_bm{ position:relative; height:18px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_b_m.gif) left bottom repeat-x; }
+.box2 .box_bm .b_left{display:block; position:absolute; bottom:-1px; left:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_b_l.gif) left top no-repeat; width:18px; height:18px;}
+.box2 .box_bm .b_right{display:block; position:absolute; bottom:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box2_b_r.gif) left top no-repeat; width:18px; height:18px;}
+
+
+/* box3 */
+.box3{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_m_l.gif) left top repeat-y ; }
+.box3 .box_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_m_r.gif) right top repeat-y;}
+.box3 .box_tp{ position:relative; height:20px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_t_m.gif) left top repeat-x; margin-bottom:-15px; }
+.box3 .box_tp .t_left{ display:block; position:absolute; top:0px; left:0; background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_t_l.gif) left top no-repeat; width:20px; height:20px;}
+.box3 .box_tp .t_right{ display:block; position:absolute; top:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_t_r.gif) left top no-repeat; width:20px; height:20px;}
+.box3 .box_bm{ position:relative; height:20px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_b_m.gif) left bottom repeat-x;  margin-top:-15px;}
+.box3 .box_bm .b_left{display:block; position:absolute; bottom:-1px; left:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_b_l.gif) left top no-repeat; width:20px; height:20px;}
+.box3 .box_bm .b_right{display:block; position:absolute; bottom:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box3_b_r.gif) left top no-repeat; width:20px; height:20px;}
+
+
+
+/* box5 */
+.box5{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_m_l.gif) left top repeat-y ; }
+.box5 .box_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_m_r.gif) right top repeat-y;}
+.box5 .box_tp{ position:relative; height:8px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_t_m.gif) left top repeat-x; }
+.box5 .box_tp .t_left{ display:block; position:absolute; top:0px; left:0; background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_t_l.gif) left top no-repeat; width:8px; height:8px;}
+.box5 .box_tp .t_right{ display:block; position:absolute; top:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_t_r.gif) left top no-repeat; width:8px; height:8px;}
+.box5 .box_bm{ position:relative; height:8px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_b_m.gif) left bottom repeat-x; }
+.box5 .box_bm .b_left{display:block; position:absolute; bottom:-1px; left:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_b_l.gif) left top no-repeat; width:8px; height:8px;}
+.box5 .box_bm .b_right{display:block; position:absolute; bottom:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/box5_b_r.gif) left top no-repeat; width:8px; height:8px;}
+
+
+/* box_cate */
+.box_cate{ background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_m_l.gif) repeat-y;_margin-bottom:-2px; float:left; width:100%;  }
+.box_cate .box_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_m_r.gif) right top repeat-y; float:left; width:100%;  }
+.box_cate .box_tp{ position:relative; height:7px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_t_m.gif) left top repeat-x; }
+.box_cate .box_tp .t_left{ display:block; position:absolute; top:0px; left:0; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_t_l.gif) left top no-repeat; width:13px; height:13px;}
+.box_cate .box_tp .t_right{ display:block; position:absolute; top:0px; right:0; _right:-1px; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_t_r.gif) left top no-repeat; width:13px; height:13px;}
+.box_cate .box_bm{ position:relative; height:7px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_b_m.gif) left bottom repeat-x; }
+.box_cate .box_bm .b_left{display:block; position:absolute; bottom:0px; left:0px; _bottom:-2px; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_b_l.gif) left top no-repeat; width:13px; height:13px;}
+.box_cate .box_bm .b_right{display:block; position:absolute; bottom:0px; right:0px;  _bottom:-2px; _right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_b_r.gif) left top no-repeat; width:13px; height:13px;}
+.box_cate .box_con{padding:10px 21px 10px 21px;}
+
+
+/*.g_box1{ background:#f2f2f2; border-top:1px solid #e4e4e4;  border-bottom:1px solid #e4e4e4;}*/
+.g_box1{ background:#f3f6f9; border-top:1px solid #d0dde9;  border-bottom:1px solid #d0dde9;}
+.g_box2{ background:#f3f6f9; border-top:1px solid #d0dde9;  border-bottom:1px solid #d0dde9;}
+
+
+/* box_com */
+.box_com{ background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_m_l.gif) repeat-y; }
+.box_com .box_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_m_r.gif) right top repeat-y; }
+.box_com .box_tp{ position:relative; height:101px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_t_m.gif) left top repeat-x; }
+.box_com .box_tp .t_left{ display:block; position:absolute; top:0px; left:0; background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_t_l.gif) left top no-repeat; width:21px; height:101px;}
+.box_com .box_tp .t_right{ display:block; position:absolute; top:0px; right:0px; _right:-1px; background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_t_r.gif) left top no-repeat; width:26px; height:101px;}
+.box_com .box_bm{ position:relative; height:5px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_b_m.gif) left bottom repeat-x; }
+.box_com .box_bm .b_left{display:block; position:absolute; bottom:0px; left:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_b_l.gif) left top no-repeat; width:14px; height:14px;}
+.box_com .box_bm .b_right{display:block; position:absolute; bottom:0px; right:-2px;  background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_b_r.gif) left top no-repeat; width:76px; height:66px;}
+.box_com .box_con{padding:10px 21px 10px 21px;}
+
+/****************************************
+Button
+*****************************************/
+.btn_box{display:block; clear:both;}
+
+.btn_en_blue1{ display:block; height:26px;  font:bold 12px verdnana;}
+.btn_en_blue1 .btn_left{ display:block; width:14px;  height:26px; float:left; font:bold 12px verdnana; background:url(https://image1.ecplaza.com/korea/v2/images/common/btn1_l.gif) top left no-repeat; }
+.btn_en_blue1 a{ display:block; color:#fff; height:26px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/btn1_r.gif) top right no-repeat; padding:0 25px 0 0px;  line-height:26px;}
+.btn_en_blue1 .txt_name{ text-align:center;}
+
+.btn_type1{display:block; height:25px; font:bold 12px ����; _width:80px}
+.btn_type1 .btn_left{ display:block; width:14px;  height:25px; float:left; font:bold 12px verdnana; background:url(https://image1.ecplaza.com/korea/v2/images/common/btn_type1_l.gif) top left no-repeat;}
+.btn_type1 a{ display:block; color:#0b162a; height:25px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/btn_type1_r.gif) top right no-repeat;  padding:0 18px 0 0px;  line-height:25px; letter-spacing:-1px;}
+.btn_type1 a:hover{ color:#0ea5cd;}
+.btn_type1 .txt_name{ text-align:center;  padding:0 0px 0 8px;}
+.btn_type1 .fr  .txt_name{ float:left;}
+
+.btn_type2{display:block; height:25px; font:bold 11px ����;}
+.btn_type2 .btn_left{ display:block; width:14px;  height:25px; float:left; font:bold 12px verdnana; background:url(https://image1.ecplaza.com/korea/v2/images/common/btn_type2_l.gif) top left no-repeat; }
+.btn_type2 a{ display:block; color:#0b162a; height:25px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/btn_type2_r.gif) top right no-repeat;  padding:0 18px 0 0px;  line-height:25px;}
+.btn_type2 a:hover{ color:#ef3900;}
+.btn_type2 .txt_name{ text-align:center;  padding:0 0px 0 8px;  }
+
+
+/****************************************
+Table
+*****************************************/
+.bar_title { display:block; background:#0da3cb;  text-align:left; padding:0px 10px 0px 10px; color:#fff;line-height:20px; height:20px;}
+
+.tb_type1{}
+.tb_type1 table{ width:100%;}
+.tb_type1 .txt_l th,.tb_type1.txt_l td{  text-align:left;}
+.tb_type1 .txt_r th,.tb_type1.txt_r td{  text-align:right;}
+.tb_type1 .txt_c th,.tb_type1.txt_c td{  text-align:center;}
+.tb_type1 .icon1_th th{  background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list3.gif) 4px center  no-repeat; padding-left:14px;}
+.tb_type1 .icon1_th th.icon_ess{  background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_ess.gif) 2px center  no-repeat; padding-left:14px;}
+.tb_type1 th.icon_ess{  background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_ess.gif) 3px center  no-repeat; padding-left:12px;}
+.tb_type1 th{ padding:7px 10px 7px 10px; border-right:1px solid #afdde9;  border-bottom:1px solid #d5d5d5; line-height:16px;}
+.tb_type1 td{ padding:7px 10px 7px 10px; border-right:1px solid #d5d5d5;  border-bottom:1px solid #d5d5d5;  line-height:16px;}
+.tb_type1 td.view_type{ padding:10px 10px 10px 10px;}
+.tb_type1 td.td_comment1{ background:#f5f5f5; font-size:11px; line-height:14px; }
+.tb_type1 td.no_r,.tb_type1 th.no_r{ border-right:0;}
+.tb_type1 th.txt_c, .tb_type1 td.txt_c{ text-align:center;}
+
+
+
+.tb_type2{ border-bottom:1px solid #8fd5e8;  background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) 0 0 repeat-x;  background-color:#f2fbfc;}
+.tb_type2 table{ width:100%;}
+.tb_type2 table th{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part.gif) right top no-repeat;  padding:7px 7px 4px 0px; border-bottom:1px solid #8fd5e8; color:#0ea5cd;}
+.tb_type2 table th.no_r{ border-right:0; background:none;}
+.tb_type2 table td{ background-color:#fff; padding:5px 7px 5px 0px; border-bottom:1px solid #dff0f5;}
+.tb_type2 table td a:hover{ color:#0ea5cd; }
+.tb_type2 .txt_f{ letter-spacing:-2px; margin-right:5px;}
+.tb_type2 table td.td_sel{ font-weight:bold; text-align:left; }
+.tb_type2 table td.txt_l{ text-align:left; padding-left:5px;}
+
+
+.tb_type3{ border-bottom:1px solid #8fd5e8;  background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) 0 0 repeat-x;}
+.tb_type3 table{ width:100%;}
+.tb_type3 table th{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part.gif) right top no-repeat;  padding:7px 7px 4px 0px; border-bottom:1px solid #8fd5e8; color:#0ea5cd;}
+.tb_type3 table th.no_r{ border-right:0; background:none;}
+.tb_type3 table td{background-color:#fff; padding:5px 7px 5px 0px; border-bottom:1px solid #dff0f5;}
+.tb_type3 table td a:hover{ color:#0ea5cd; }
+.tb_type3 .txt_f{ letter-spacing:-2px; margin-right:5px;}
+.tb_type3 table td.td_sel{ font-weight:bold; text-align:left; }
+.tb_type3 table td.txt_l{ text-align:left; padding-left:5px;}
+.tb_type3 .sel1{ background:#f2fbfc;}
+.tb_type3 table td.txt_l{ text-align:left; padding-left:10px;}
+
+.tb_type4{ border-top:1px solid #4ab8e9; border-bottom:1px solid #99cccc;}
+.tb_type4 th{ background:url(https://image1.ecplaza.com/korea/v2/images/government/s4_img2_tb_bg.gif) repeat-x; height:22px; line-height:21px; color:#fff; letter-spacing:-2px; border-right:1px solid #b1dfe8;}
+.tb_type4 td{ border-right:1px solid #9fd4e4; }
+.tb_type4 th.no_r{ border-right:0;}
+.tb_type4 td.no_r{ border-right:0;}
+
+
+/*tbview_type1 */
+.tbview_type1 {border-bottom:1px solid #8fd5e8;}
+.tbview_type1 table{ width:100%; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x;}
+.tbview_type1 th{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline1.gif) right top repeat-y; padding:8px 5px 5px 0px; color:#0ea5cd; border-bottom:1px solid #a5dcec; font:bold 11px ����; text-align: left; padding-left:10px; background-color:#f2fbfc; }
+.tbview_type1 table .th1{background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part1.gif) right top no-repeat; border-right:0px;  border-bottom:1px solid #a5dcec; font-weight:bold; padding:10px 5px 6px 10px;  font:bold 12px ����;}
+.tbview_type1 table .th3{ background:none;  color:#0ea5cd; border-bottom:1px solid #a5dcec;  border-right:1px solid #a5dcec;  font:bold 11px ����; text-align: left; background-color:#f2fbfc; }
+.tbview_type1 table th.no_r{ border-right:0; background:none;}
+.tbview_type1 table .th2{width:100%; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x;}
+.tbview_type1 table .th4{background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part2.gif) right top no-repeat; border-right:0px;  border-bottom:1px solid #a5dcec; font-weight:bold; padding:10px 5px 6px 10px;  font:bold 12px ����;}
+.tbview_type1 table td{background-color:#fff; padding:5px 0 5px 0; border-bottom:1px solid #a5dcec; }
+.tbview_type1 table td.td1{ background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x; background-color:none; border-bottom:1px solid #a5dcec;font-weight:bold; padding:10px 5px 6px 10px;}
+.tbview_type1 table td.td2{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline1.gif) right top repeat-y; background-color:#fffef4; }
+
+.tbview_type1 table td.tb2_sub{ padding:10px; margin:0;}
+.tbview_type1 table table {border-top:1px solid #d0d0d0; border-right:1px solid #d0d0d0;}
+.tbview_type1 table td.tb2_sub th{ background:#f5f5f5; border:1px solid #d0d0d0; border-top:0; color:#777777; font-weight:normal;}
+.tbview_type1 table td.tb2_sub td{ border-bottom:1px solid #d5d5d5; }
+
+.tbview_type1 .txt_f{ letter-spacing:-2px; margin-right:5px;}
+.tbview_type1 .txt_l{ text-align:left; padding-left:10px;}
+.tbview_type1 .txt_c{ text-align:center;}
+.tbview_type1 .sub_tt td{ border:0; margin-bottom:10px;}
+
+.tbview_type1 .tt1{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/tt_box1_r.gif) right top no-repeat; height:16px;}
+.tbview_type1 .tt1 .left{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/tt_box1_l.gif) left top no-repeat; width:5px; height:16px; float:left;}
+.tbview_type1 .tt1 li{font:normal 11px ����; color:#fff; text-align:center; line-height:17px;}
+.tbview_type1 .tt1 .right{ display:block; text-align:center; padding-right:5px;}
+
+.tbview_type1 .tt2{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/tt_box2_r.gif) right top no-repeat; height:16px;}
+.tbview_type1 .tt2 .left{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/tt_box2_l.gif) left top no-repeat; width:5px; height:16px; float:left;}
+.tbview_type1 .tt2 li{font:normal 11px ����; color:#fff; text-align:center; line-height:17px;}
+.tbview_type1 .tt2 .right{ display:block; text-align:center ; padding-right:5px;}
+
+.tbview_type1 .td_rline td{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline1.gif) right top repeat-y; }
+.tbview_type1 .view_type td { padding:7px 8px 7px 5px;}
+.tbview_type1 .th_cen th{ text-align:center;  padding:7px 10px 7px 5px;}
+
+
+.tbview_type1 .td_rline .no_r{ background:none;}
+.tbview_type1 .td_rline .no_r2{ background:none; background-color:#f2fbfc;}
+.tbview_type1 .td_no_r td{background:none; }
+.tbview_type1 .v_top td{ vertical-align:top;}
+.tbview_type1 td.f_09{ font-size:11px;}
+.tbview_type1 th.f_09{ font-size:11px;}
+
+.tbview_type1 .tds td { padding:5px 0 2px 0;}
+.tbview_type1 .tds td .ul_type4 { margin:0;}
+.tbview_type1 .td_cen td{ text-align:center;}
+.tbview_type1 .td_cen td.txt_l{text-align:left;}
+
+
+/*tbview_type2 */
+.tbview_type2 {border-bottom:1px solid #8fd5e8; background-color:#f2fbfc; }
+.tbview_type2 table{ width:100%; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x;}
+.tbview_type2 th{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline1.gif) right top repeat-y; padding:5px 8px 3px 0px; color:#0ea5cd; border-bottom:1px solid #a5dcec; font:bold 11px ����; text-align: left;
+; text-align:center;}
+.tbview_type2 table .th1{background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part2.gif) right top no-repeat; border-bottom:1px solid #a5dcec; font-weight:bold; padding:7px 7px 4px 0px;  font:bold 12px ����;}
+.tbview_type2 table th.th2{background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part.gif) right top no-repeat; border-bottom:1px solid #a5dcec; font-weight:bold; padding:10px 7px 8px 0px; color:#0b162a ; font-size:12px;}
+.tbview_type2 table .th3{background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part3.gif) right top no-repeat; border-bottom:1px solid #a5dcec; font-weight:bold; padding:7px 7px 4px 0px;  font:bold 12px ����;}
+.tbview_type2 table .th4{ background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x;  background-color:none;  color:#0ea5cd; border-bottom:1px solid #a5dcec;  border-right:1px solid #a5dcec;  font:bold 11px ����;}
+.tbview_type2 table .th5{ background:none;  background-color:none;  color:#0ea5cd; border-bottom:1px solid #a5dcec;  border-right:1px solid #a5dcec;  font:bold 11px ����;}
+.tbview_type2 th{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline2.gif) right top repeat-y; padding:5px 8px 3px 0px; color:#0ea5cd; border-bottom:1px solid #a5dcec; font:bold 11px ����; text-align: left;
+; text-align:center;}
+.tbview_type2 table th.no_r{ border-right:0; background:none;}
+.tbview_type2 table td{ background-color:#fff; padding:5px 0 5px 0; border-bottom:1px solid #a5dcec;}
+.tbview_type2 table td.td1{background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part2.gif) right top repeat-y;  background-color:none; border-bottom:1px solid #a5dcec; padding:10px 5px 6px 10px;}
+.tbview_type2 table td.td2{ background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x;  background-color:#f2fbfc; border-bottom:1px solid #a5dcec; padding:7px 7px 4px 0px;  border-right:0;}
+.tbview_type2 table td.td3{background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x; background-color:#fff; border-bottom:1px solid #a5dcec; padding:7px 7px 4px 0px;  border-right:0;}
+.tbview_type2 .con_area{ background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbview_line.gif) left top repeat-x; padding-bottom:10px; background-color:#fff; border-right:0;}
+.tbview_type2 .con_area .text_l{ text-align:left;}
+.tbview_type2 .con_view{ padding:15px 10px 15px 10px; line-height:20px; display:block; width:600px; overflow:hidden; overflow-x:auto; }
+.tbview_type2 .link_file a{ display:block; text-decoration:underline; font-size:11px; letter-spacing:-1px; padding:1px 0 1px 0;}
+.tbview_type2 .link_file a:hover{ color:#0ea5cd;}
+.tbview_type2 table th.txt_l{ text-align:left; padding-left:10px;}
+.tbview_type2 table td.txt_l{ text-align:left; padding-left:5px;}
+.tbview_type2 table td.no_r{ border-right:0; background:#fff;}
+.tbview_type2 .td_no_r td{ border-right:0; }
+.tbview_type2 .td_rline td{background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline1.gif) right top repeat-y; background-color:#fff; border-right:0}
+.tbview_type2 .td_cen td{ text-align:center;  padding:7px 12px 7px 5px;}
+.tbview_type2 .con_view table{background:none;}
+.tbview_type2 .con_view table td { border-bottom:1px solid transparent; }
+.tbview_type2 .con_view table th {border-bottom:1px solid transparent;}
+.tbview_type2 th.line_l {border-left:1px solid #a5dcec;}
+
+/*type3*/
+.tbview_type3{border-bottom:1px solid #8fd5e8;  background-color:#f2fbfc;}
+.tbview_type3 table{ width:100%; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_tbtype2.gif) top center repeat-x;}
+.tbview_type3 th{ background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline1.gif) right top repeat-y; padding:8px 5px 5px 0px; color:#0ea5cd; border-bottom:1px solid #a5dcec; font:bold 11px ����; text-align: left; padding-left:10px; background-color:#f2fbfc; }
+.tbview_type3 table .th1{background:url(https://image1.ecplaza.com/korea/v2/images/common/tbtype2_part2.gif) right top no-repeat; border-right:0px;  border-bottom:1px solid #a5dcec; font-weight:bold; padding:10px 5px 6px 10px;  font:bold 12px ����;}
+.tbview_type3 table td{padding:5px 0 5px 0; border-bottom:1px solid #a5dcec; background:url(https://image1.ecplaza.com/korea/v2/images/common/tb2_td_bgline1.gif) right top repeat-y; background-color:#fff;}
+.tbview_type3 table th.no_r{ background:none;}
+.tbview_type3 table td.no_r{ background:none; background-color:#fff;}
+.tbview_type3 .v_top td{ vertical-align:top;}
+.tbview_type3 .th_cen th{ text-align:center;  padding:7px 12px 7px 5px;}
+.tbview_type3 .td_cen td{ text-align:center;  padding:7px 12px 7px 5px;}
+.tbview_type3 .view_type td { padding:7px 10px 7px 3px;}
+.tbview_type3 .td_no_r td{background:none; background-color:#fff; }
+
+
+
+
+#page_num_btn{ text-align:center; margin-top:20px; font-family:verdanan;}
+#page_num_btn ul li{ display:inline;}
+#page_num_btn ul li img { margin-bottom:-4px;}
+#page_num_btn .pgNum {  letter-spacing:-1px;}
+#page_num_btn .pgNum  a{ font:normal 1em verdana; color:#676767; font-size:11px; padding: 0 3px 0 3px; }
+#page_num_btn .pgNum  a:hover{  color:#eb4d22; font-size:11px; }
+#page_num_btn .pgNum  a.on{font:bold 1em verdana; color:#eb4d22;}
+
+
+/* List */
+.ls_type1{ margin-bottom:30px;}
+.ls_type1 ul{ display:block; border-top:2px solid #0b162a; }
+.ls_type1 ul li{ display:block; border-bottom:1px solid #d5d5d5;  padding:7px 10px 7px 10px; text-align:justify;}
+.ls_type1 ul .tt{display:block; font-weight:bold; margin-bottom:5px;}
+.ls_type1 ul li a{ display:block;}
+.ls_type1 ul a:hover{ color:#757575;}
+.ls_type1 ul a .tt { color:#0b162a;}
+.ls_type1 ul a:hover .tt {color:#0ea5cd;  text-decoration:none;  }
+.ls_type1 ul a .tt_date{ font-size:11px; color:#54698b; font-weight:bold; }
+
+/* List */
+.ls_type2{ margin-bottom:30px;}
+.ls_type2 ul{ display:block; }
+.ls_type2 ul li{ display:block; padding:7px 10px 7px 10px;}
+.ls_type2 ul li .le{ clear:both; height:0; font:0; line-height:0;}
+.ls_type2 ul .tt{display:block; font-weight:bold; margin-bottom:5px;}
+.ls_type2 ul a:hover{ color:#757575;  text-decoration:underline;}
+.ls_type2 ul a .tt { color:#0b162a;}
+.ls_type2 ul a:hover .tt {color:#0ea5cd;  text-decoration:none;  }
+
+
+
+/* HISTORY List*/
+#history { display:block; float:right; width:400px;}
+#history ul{font-size:0.9em;}
+#history ul li.month01 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month1.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month02 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month2.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month03 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month3.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month04 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month4.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month05 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month5.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month06 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month6.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month07 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month7.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month08 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month8.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month09 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month9.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month10 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month10.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month11 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month11.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li.month12 {background:url(https://image1.ecplaza.com/korea/v2/images/intro/icon_month12.gif) left top no-repeat; padding:3px 0 5px 48px; margin-top:3px;}
+#history ul li {padding:3px 0 8px 48px; line-height:12px;}
+#history ul li.title {padding:0;}
+
+
+
+
+
+/****************************************
+Member
+*****************************************/
+.join_step{ width:480px; margin:0 auto;}
+.join_step ul li{ float:left; padding:0 5px 0 5px; }
+.join_step ul li.aw{ display:block; padding-top:20px;}
+
+.img_member1 {position:absolute; top:-95px; left:0; width:100%; text-align:center;}
+.img_member1_h{ height:92px;}
+
+
+#login_box{ width:305px; float:left; margin-right:25px;}
+#login_box .in_box{ display:block; background:#eee; padding:20px 20px 10px 20px;}
+
+#join_box{ width:220px; float:left;}
+#join_box .ul_type2{ letter-spacing:-1px;}
+
+#join_box .ul_type2 a{ font-size:11px; letter-spacing:-2px;}
+#join_box .ul_type2 a:hover{ color:#009cc8;}
+
+#login_box .dotline3{font-size:0; line-height:0; }
+
+
+/****************************************
+��������
+*****************************************/
+.board_search{ float:right; margin-bottom:10px; text-align:right;}
+.board_search .inp_type2{  padding-left:5px;}
+.board_search input{ vertical-align:middle;}
+.board_search select{ vertical-align:middle;}
+
+.tab_type1{ height:25px; margin-bottom:20px; text-align:right; float:right;  background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/tab1_bg.gif) repeat-x; margin-left:-10px; }
+.tab_type1 ul li{ display:inline; margin-left:0px;}
+
+.tab_line{ clear:both; background:url(https://image1.ecplaza.com/korea/v2/images/common/part_tab_line.gif) left 35px no-repeat }
+
+/****************************************
+��������
+*****************************************/
+.box_paper{ margin-bottom:20px;}
+.box_paper .box_con{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_bg.gif) 140px 0 repeat-y; padding:10px;}
+.tt_paper{ position:absolute; top:-7px; left:20px;}
+.box_paper .box_con ul {  float:left; width:450px; margin-left:150px; font-size:11px;}
+.box_paper .box_con ul li{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/icon_cate_list.gif) no-repeat; float:left; width:29%; padding-left:12px;  margin: 3px 3px 2px 3px; line-height:13px;}
+.box_paper .box_con ul li a:hover{  color:#ef3900;}
+
+
+.box_paper .box_con_word{display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/box_cate_bg.gif) center 0 repeat-y; padding:10px;}
+.box_paper .box_con_word ul{ margin-left:15px;; margin-top:30px; width:275px;}
+.box_paper .box_con_word ul li{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/font_bg1.gif) no-repeat;  float:left; width:18px; height:18px;  padding-left:0px;  margin: 4px 2px 2px 1px;}
+.box_paper .box_con_word  ul li a{ display:block; font:bold 12px ����; color:#0b162a; padding:1px 2px 2px 2px;}
+.box_paper .box_con_word  ul li a:hover{  color:#ef3900;}
+
+.box_paper .box_kr{ float:left; width:275px; margin-right:25px;}
+.box_paper .box_kr .tt_paper{ top:-17px; left:10px;}
+.box_paper .box_kr ul { width:240px;}
+.box_paper .box_kr ul li.chr_num{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/font_bg2.gif) no-repeat;width:62px; text-align:center;}
+.box_paper .box_kr ul li.chr_num a{ font:bold 12px verdana;  padding-top:0px; }
+
+
+.box_paper .box_en{ float:left; width:275px;}
+.box_paper .box_en .tt_paper{ top:-17px; left:10px;}
+.box_paper .box_en .tt_paper{ top:-17px; left:10px;}
+.box_paper .box_en ul li a{ font:bold 11px verdana; text-align:center; padding:1px 2px 2px 2px;  }
+
+
+
+.list_result_title{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/icon_result.gif) 5px 1px no-repeat; padding-left:20px; margin-bottom:5px;}
+.list_result_title .tt{ font-weight: bold; color:#0b162a;}
+.list_result {background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/list_bg_part.gif) center top repeat-y; border-top:2px solid #0b162a; padding:10px 0px 10px 5px; border-bottom:1px solid #d3d5d9;}
+.list_result ul{ width:610px; }
+.list_result ul li{ display:block; float:left; width:45%;;  background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/icon_list7.gif) 10px 4px no-repeat; text-align:left; padding:0 10px 0 20px; margin-bottom:5px;}
+.list_result ul li.le{ clear:both; width:100%; font:0; line-height:0; height:0; background:none; padding:0; margin:0; }
+
+
+.list_result2 { padding:0px 0px 0px 5px; border-bottom:1px solid #d3d5d9;}
+.list_result2 ul{ width:610px; }
+.list_result2 ul li{ display:block; float:left; text-align:left; }
+.list_result2 ul li.le{ clear:both; width:100%; font-size:0; line-height:0; height:0; background:none; padding:0; margin:0; border-top:2px solid #0b162a; }
+.list_result2 ul li.tt{ display:block; font-weight: bold; color:#0b162a; width:9%; padding:0px 5px 0px 5px;}
+.list_result2 ul li.tt_value{  color:#0b162a; width:82%;  padding:10px 5px 0px 20px;  background:url(https://image1.ecplaza.com/korea/v2/images/trade_info/list_bg_part.gif) left top repeat-y; }
+.list_result2 ul li.tt_value.p_b10{ padding-bottom:10px;}
+.list_result2 ul li.tt_value.no_l{ background:none;}
+
+.tt_h4{ margin-bottom:8px;}
+.tt_dep1{margin-bottom:8px;}
+
+
+.dl_box1 .dl_line{ margin-bottom:8px; margin-top:8px; height:10px; }
+.dl_box2 .dl_line{ margin-bottom:8px;}
+.l_s0{ letter-spacing:0px;}
+.l_s1{ letter-spacing:-1px;}
+.l_s2{ letter-spacing:-2px;}
+
+/****************************************
+���հ˻�
+*****************************************/
+#all_search{ display:block; border:5px solid #0ea5cd; margin-bottom:10px;}
+#all_search .board_search { float:none; text-align:left; padding:10px 10px 0 10px; height:22px; }
+#all_search .inp_type2{ width:250px;}
+.result_msg{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/bg_shadow.gif) left bottom repeat-x; padding:5px 0 10px 0; margin-bottom:15px;}
+.result_cate{ margin-bottom:5px;}
+.result_cate h4 { display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_cate.gif) 1px 1px  no-repeat; padding-left:19px; font-weight:bold; color:#1c85c6; margin-top:5px;}
+
+#all_search_cate { width:190px; margin-top:45px; margin-left:12px; font-weight:bold;}
+#all_search_cate ul li a{ display:block; height:22px; background:url(https://image1.ecplaza.com/korea/v2/images/common/menu_sh_bg.gif) no-repeat; padding:2px 0 0 16px;
+ margin-bottom:3px; color:#6d7789; line-height:22px; letter-spacing:-1px;}
+#all_search_cate ul li a.on{ background:url(https://image1.ecplaza.com/korea/v2/images/common/menu_sh_bg_on.gif) no-repeat; color:#fff;}
+#all_search_cate ul li a:hover{color:#1e3c70;}
+
+/****************************************
+����
+*****************************************/
+.com_info_box{ margin-top:20px; display:block;}
+
+.com_info_box .com_tt{ position:absolute; top:4px; left:5px;}
+.com_info_box .info_box{ padding:22px 20px 0 70px;}
+.com_info_box .com_logo{ width:140px; height:62px; background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_logo.gif) center no-repeat; float:left; margin-right:20px; display:none;}
+.com_info_box .com_info dl{ float:left; width:300px; display:block}
+.com_info_box .com_info dt{ float:left;}
+.com_info_box .com_info dd{ float:left; padding-left:10px;}
+.com_info_box .com_info dd.le{ float:none; clear:both; height:0px; font-size:0; line-height:0;}
+
+.com_info_box .com_pic{ position:absolute; top:0; left:-41px; background:url(https://image1.ecplaza.com/korea/v2/images/oversea/box_com_pic_tt.gif) center no-repeat; width:303px; height:303px;}
+.com_info_box .conbox{ min-height:290px; _height:290px; padding:25px;}
+.com_info_box .info_con{ margin-left:280px;}
+.com_info_box .pic_img{ margin:52px 0 0 54px;}
+.com_info_box .pic_tt{ padding:4px 20px 0 20px;  color:#1e3c70; font-weight:bold; }
+
+
+
+/****************************************
+���νÿ����
+*****************************************/
+#pop_gover{ background:url(https://image1.ecplaza.com/korea/v2/images/government/pop_img_top1.gif) no-repeat; padding:80px 10px 5px 10px;background-color:#0ea5cd;}
+#pop_gover .pop_box{ background-color:#fff;}
+
+/* pop1 */
+.popbox1{ background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_m_l.gif) repeat-y; }
+.popbox1 .box_wrap{ background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_m_r.gif) right top repeat-y; }
+.popbox1 .box_tp{ position:relative; height:10px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_t_m.gif) left top repeat-x; }
+.popbox1 .box_tp .t_left{ display:block; position:absolute; top:0px; left:0; background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_t_l.gif) left top no-repeat; width:10px; height:10px;}
+.popbox1 .box_tp .t_right{ display:block; position:absolute; top:0px; right:0px; _right:-1px; background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_t_r.gif) left top no-repeat; width:10px; height:10px;}
+.popbox1 .box_bm{ position:relative; height:10px; display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_b_m.gif) left bottom repeat-x; }
+.popbox1 .box_bm .b_left{display:block; position:absolute; bottom:0px; left:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_b_l.gif) left top no-repeat; width:10px; height:10px;}
+.popbox1 .box_bm .b_right{display:block; position:absolute; bottom:0px; right:0px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/popbox_b_r.gif) left top no-repeat; width:10px; height:10px;}
+.popbox1 .box_con{padding:10px 21px 10px 21px;}
+.popbox1 .contype10{ padding:10px 2px 10px 10px;}
+.popbox1 .pop_title{ padding:0 2px 0 2px; margin-bottom:20px;}
+.popbox1 .pop_title p{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/government/pop_bg_gover_tt.gif) left bottom repeat-x; text-align:center;}
+
+.box_consult{width:250px; float:left;}
+.box_consult dt{ width:70px; float:left;}
+.box_consult dd{ width:160px; float:left;}
+.box_consult dd.le{clear:both; display:block; font-size:0; line-height:0; margin-bottom:10px; width:100%;}
+
+
+
+/****************************************
+����Ʈ��
+*****************************************/
+#sitemap .part_box1{ width:150px; float:left;}
+#sitemap .part_box2{ width:150px; float:left;}
+
+.site_tt_box{ display:block; position:relative; width:100%; height:30px;  }
+.site_tt_box .site_tt{ position:absolute; top:-21px;  background:url(https://image1.ecplaza.com/korea/v2/images/sitemap/sitemap_tt_bg.gif) center top  no-repeat; width:100%;; height:52px; left:2px; text-align:center;}
+.site_tt_box .site_tt img{ margin-top:20px; margin-bottom:-20px; text-align:center;}
+#sitemap .one_part .site_box{ padding:5px 15px 5px 15px; }
+
+
+.site_tt_box2{ display:block; position:relative; width:100%; height:10px; }
+.site_tt_box2 .site_tt{ position:absolute; top:-21px;  background:url(https://image1.ecplaza.com/korea/v2/images/sitemap/sitemap_tt_bg.gif) center top no-repeat; width:100%;; height:40px; left:2px; text-align:center;}
+.site_tt_box2 .site_tt img{ margin-top:20px; margin-bottom:-20px; text-align:center;}
+
+#sitemap dl dt{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/sitemap/sitemap_ls_icon.gif) 2px 3px no-repeat ; padding-left:16px; font-weight:bold; color:#0ea5cd; letter-spacing:-1px;}
+#sitemap dl dt.no_le{ letter-spacing:0px;}
+#sitemap dl dt.line{border-bottom:1px dotted #c9d3e1;}
+#sitemap dl dd{ border-bottom:1px dotted #c9d3e1; margin:3px 0 3px 0; clear:both; padding:3px 0 3px 0;}
+#sitemap .dt_line dt{border-bottom:1px dotted #c9d3e1;margin:3px 0 3px 0;}
+#sitemap .dt_line dt.no_line{border-bottom:0; }
+#sitemap .dt_line dd.no_line{border-bottom:0; }
+#sitemap dl dd ul li{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list5.gif) 8px 5px no-repeat;  padding-left:15px; margin-bottom:2px; color:#6d7789; font-size:11px; line-height:14px; letter-spacing:-1px; }
+
+#sitemap dl dt a{color:#0ea5cd;}
+#sitemap dl dt a:hover{color:#f25e1e;}
+#sitemap dl dd ul li a{color:#6d7789;}
+#sitemap dl dd ul li a:hover{color:#0061af;}
+
+
+/****************************************
+��������
+*****************************************/
+.faq_box .icon_q{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/custom/faq_icon_q.gif) left top no-repeat; padding-left:40px; font-weight: bold; color:#0d9ac0; margin-bottom:3px;  padding-bottom:2px;}
+.faq_box  .g_box2{ margin-bottom:25px;}
+.faq_box  .con_ans{width:560px; display:block; float:right;  padding:10px 20px 10px 20px;}
+.faq_box .icon_a{ position:absolute; top:10px; left:10px;}
+.faq_box .d_line_b{height:0px; border:1px dotted #7697b8; border-bottom:0px; border-left:0px;  border-right:0px; margin-bottom:10px; margin-top:-10px;}
+
+/****************************************
+ȸ��Ұ�
+*****************************************/
+.daum_map{ width:618px; margin:0 auto; margin-top:10px; margin-bottom:30px;}
+#mapbox{margin:0 auto; width:600px; height:200px; margin:0 auto;  clear:both; padding-top:5px; }
+#mapbox div{float: left;}
+
+
+/*error--*/
+.error_box{ display:block; height:100%; width:100%; text-align:center; }
+.error_box img { margin-top:100px; }
+
+
+/***************************************
+�����������
+*****************************************/
+
+.tb_gvm li{ color:#333333; letter-spacing:-1px;  background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list10.gif) 4px 5px no-repeat; padding-left:12px; line-height:16px; margin-bottom:5px;}
+.tb_gvm li .icon_minus{ color:#707070;  margin-bottom:10px; line-height:16px; letter-spacing:-1px; margin-left:-5px; margin-top:3px;}
+.tb_gvm li ul li.icon_minus{ color:#707070; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_minus.gif) 4px 4px no-repeat; margin-bottom:3px; line-height:16px; letter-spacing:-1px; margin-left:-5px; }
+
+.tb_gvm li .ls_no{ letter-spacing:0}
+.tb_gvm li .ls_no{ letter-spacing:0}
+
+.tb_gvm .tb_type4 td{ padding:10px; vertical-align:top;}
+
+.ul_type10 li{ background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list10.gif) 4px 5px no-repeat; padding-left:15px; line-height:16px; margin-bottom:5px;}
+.box_charac{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/government/s4_img2_bg_charac.gif) no-repeat; min-height:191px; _height:191px; padding-left:195px; padding-top:25px; padding-right:20px;}
+.box_effect{ display:block; background:url(https://image1.ecplaza.com/korea/v2/images/government/s4_img2_7_4_bg.gif) no-repeat; min-height:165px; _height:165px; padding-left:230px; padding-top:25px; padding-right:20px;}
+
+
+.box_charac li{ color:#333333;  background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_list1.gif) 4px 3px no-repeat; padding-left:12px; line-height:16px; margin-bottom:5px; color:#0268a3; }
+.box_charac li .icon_minus{ color:#707070;  margin-bottom:10px; line-height:16px;  margin-left:-5px; margin-top:3px; letter-spacing:0;}
+.box_charac li ul li.icon_minus{ color:#707070; background:url(https://image1.ecplaza.com/korea/v2/images/common/icon_minus.gif) 4px 3px no-repeat; margin-bottom:3px; line-height:16px;margin-left:-5px;letter-spacing:0; color:#656565; }
+
+/*******************************************************************************/
+/*  ECPlaza       : You In Jin  								  */
+/*  Modifyt Date  : 2013-05-29 								  */
+/*******************************************************************************/
+
+.tbview_type1 .icon_type4{ padding-right:3px;}
+
+.tt_linebox{ display:block; border-bottom:2px solid #666; padding:2px 0 1px 0;  margin-bottom:8px;}
+.tt_linebox strong{ color:#666; font-weight:bold; margin:0; padding:0;}
+}

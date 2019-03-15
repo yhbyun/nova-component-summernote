@@ -16,6 +16,9 @@
     </default-field>
 </template>
 
+<style lang="scss" src="../../css/css.scss"></style>
+<style lang="scss" src="../../css/app.scss"></style>
+
 <script>
 import "summernote/dist/summernote-lite";
 import 'summernote/dist/summernote-lite.css';

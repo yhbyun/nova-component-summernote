@@ -6,7 +6,6 @@
                 :id="field.attribute"
                 :dusk="field.attribute"
                 v-model="value"
-                v-bind="extraAttributes"
             />
             </div>
 
@@ -20,6 +19,7 @@
 <script>
 import "summernote/dist/summernote-lite";
 import 'summernote/dist/summernote-lite.css';
+import 'summernote/dist/lang/summernote-ko-KR.min';
 import 'codemirror/lib/codemirror';
 import 'codemirror/lib/codemirror.css';
 import { FormField, HandlesValidationErrors } from 'laravel-nova';
@@ -28,6 +28,14 @@ export default {
     mixins: [FormField, HandlesValidationErrors],
 
     props: ['resourceName', 'resourceId', 'field'],
+
+    computed: {
+        options() {
+            let options = this.field.options
+
+            return options
+        }
+    },
 
     methods: {
         /*
@@ -65,13 +73,63 @@ export default {
             };
         },
 
+        fileManager() {
+            let vm = this;
+
+            // Define function to open filemanager window
+            const lfm = function (options, cb) {
+                var route_prefix = (vm.options && vm.options.lfm_prefix) ? vm.options.lfm_prefix : '/laravel-filemanager';
+                window.open(route_prefix + '?type=' + vm.options.lfm_type || 'file', 'FileManager', 'width=900,height=600');
+                window.SetUrl = cb;
+            };
+
+            // Define LFM summernote button
+            const LFMButton = function (context) {
+                const ui = $.summernote.ui;
+                const button = ui.button({
+                    contents: '<i class="note-icon-picture"></i>',
+                    container: $('body'), // fix for tooltip display
+                    tooltip: '파일 관리자를 이용해서 이미지 추가하기',
+                    click: function () {
+                        lfm({type: 'image', prefix: '/laravel-filemanager'}, function (lfmItem, path) {
+                            context.invoke('insertImage', lfmItem);
+                        });
+                    }
+                });
+
+                return button.render();
+            };
+
+            // Initialize summernote with LFM button in the popover button group
+            // Please note that you can add this button to any other button group you'd like
+            $(this.$el).find('textarea').summernote({
+                lang: 'ko-KR',
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['lfm', 'link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                ],
+                buttons: {
+                    lfm: LFMButton
+                }
+            })
+        },
     },
 
     mounted() {
         let vm = this;
 
         $(document).ready(function() {
-            $(vm.$el).find('textarea').summernote();
+            if (vm.options.use_lfm) {
+                vm.fileManager();
+            } else {
+                $(vm.$el).find('textarea').summernote();
+            }
         });
     },
 

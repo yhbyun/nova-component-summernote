@@ -25,6 +25,13 @@ import 'summernote/dist/summernote-lite.css';
 import 'summernote/dist/lang/summernote-ko-KR.min';
 import 'codemirror/lib/codemirror';
 import 'codemirror/lib/codemirror.css';
+import 'codemirror/addon/edit/matchbrackets';
+import 'codemirror/mode/htmlmixed/htmlmixed';
+import 'codemirror/mode/xml/xml';
+import 'codemirror/mode/javascript/javascript';
+import 'codemirror/mode/css/css';
+import 'codemirror/mode/clike/clike';
+import 'codemirror/mode/php/php';
 import { FormField, HandlesValidationErrors } from 'laravel-nova';
 
 export default {
@@ -119,7 +126,16 @@ export default {
                 ],
                 buttons: {
                     lfm: LFMButton
-                }
+                },
+                prettifyHtml: false,
+                codemirror: {
+                    lineNumbers: true,
+                    matchBrackets: true,
+                    mode: 'application/x-httpd-php',
+                    indentUnit: 4,
+                    indentWithTabs: true,
+                    lineWrapping: false,
+                },
             })
         },
     },

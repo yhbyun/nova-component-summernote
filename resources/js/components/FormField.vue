@@ -72,7 +72,7 @@ export default {
          */
         setValue() {
             let vm = this;
-            this.value = $(vm.$el).find('.note-editable').html();
+            this.value = $(vm.$el).find('.note-editable').html().replace('=&gt;', '=>');
         },
 
         switchHtmlCodeViewToNormalView() {

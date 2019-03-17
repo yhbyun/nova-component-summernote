@@ -16,6 +16,21 @@ class NovaSummernote extends Field
      */
     public $component = 'nova-summernote';
 
+    public $preview = '';
+
+    /**
+     * 상세화면에 value 대신 표신할 html
+     *
+     * @param [string] $html
+     * @return $this
+     */
+    public function preview(string $html)
+    {
+        $this->preview = $html;
+
+        return $this;
+    }
+
     public function options(array $options = [])
     {
         return $this->withMeta(['options' => $options]);
@@ -29,6 +44,7 @@ class NovaSummernote extends Field
     public function jsonSerialize()
     {
         return array_merge(parent::jsonSerialize(), [
+            'preview' => $this->preview,
             'shouldShow' => $this->shouldBeExpanded(),
         ]);
     }

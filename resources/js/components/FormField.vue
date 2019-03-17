@@ -72,7 +72,7 @@ export default {
          */
         setValue() {
             let vm = this;
-            this.value = $(vm.$el).find('.note-editable').html().replace('=&gt;', '=>');
+            this.value = filterCode($(vm.$el).find('.note-editable').html());
         },
 
         switchHtmlCodeViewToNormalView() {
@@ -88,7 +88,7 @@ export default {
 
             // Define function to open filemanager window
             const lfm = function (options, cb) {
-                var route_prefix = (vm.options && vm.options.lfm_prefix) ? vm.options.lfm_prefix : '/laravel-filemanager';
+                const route_prefix = (vm.options && vm.options.lfm_prefix) ? vm.options.lfm_prefix : '/laravel-filemanager';
                 window.open(route_prefix + '?type=' + vm.options.lfm_type || 'file', 'FileManager', 'width=900,height=600');
                 window.SetUrl = cb;
             };
@@ -110,9 +110,12 @@ export default {
                 return button.render();
             };
 
+            const $sn = $('#' + this.field.attribute);
+            let $nEditor, $nCodable;
+
             // Initialize summernote with LFM button in the popover button group
             // Please note that you can add this button to any other button group you'd like
-            $(this.$el).find('textarea').summernote({
+            $sn.summernote({
                 lang: 'ko-KR',
                 toolbar: [
                     ['style', ['style']],
@@ -136,7 +139,22 @@ export default {
                     indentWithTabs: true,
                     lineWrapping: false,
                 },
-            })
+                callbacks: {
+                    onInit: function () {
+                        $nEditor = $sn.next();
+                        $nCodable = $nEditor.find('.note-codable');
+                    },
+                },
+            });
+
+            $sn.on('summernote.codeview.toggled', function(e) {
+                if ($sn.summernote('codeview.isActivated')) {
+                    const cmEditor = $nCodable.data('cmEditor');
+                    if (cmEditor) {
+                        cmEditor.setValue(filterCode(cmEditor.getValue()));
+                    }
+                }
+            });
         },
     },
 
@@ -155,9 +173,21 @@ export default {
 }
 
 function stripTags(html) {
-    var tmp = document.createElement("DIV");
+    let tmp = document.createElement("DIV");
     tmp.innerHTML = html;
 
     return tmp.textContent || tmp.innerText || "";
+}
+
+/**
+ * blade에서 사용하는 몇개의 프로그램 코드는 허용하기
+ * =>, ->
+ * <?php, ?>
+ * &lt;?php&#10; if
+ */
+function filterCode(str) {
+    return str.replace(/([=\-\?])&gt;/gmi, '$1>')
+                .replace(/&lt;\?php/gmi, '<?php')
+                .replace(/&#10;/gm, '\n');
 }
 </script>

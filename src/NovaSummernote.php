@@ -9,6 +9,8 @@ class NovaSummernote extends Field
 {
     use Expandable;
 
+    public $showOnIndex = false;
+
     /**
      * The field's component.
      *
@@ -17,6 +19,19 @@ class NovaSummernote extends Field
     public $component = 'nova-summernote';
 
     public $preview = '';
+
+    public function __construct(string $name, ?string $attribute = null, ?mixed $resolveCallback = null)
+    {
+        parent::__construct($name, $attribute, $resolveCallback);
+
+        $this->withMeta(
+            [
+                'options' => [
+                    'use_lfm' => false,
+                ],
+            ]
+        );
+    }
 
     /**
      * 상세화면에 value 대신 표신할 html
@@ -33,7 +48,9 @@ class NovaSummernote extends Field
 
     public function options(array $options = [])
     {
-        return $this->withMeta(['options' => $options]);
+        $currentOptions = $this->meta['options'];
+
+        return $this->withMeta(['options' => array_merge($currentOptions, $options)]);
     }
 
     /**
